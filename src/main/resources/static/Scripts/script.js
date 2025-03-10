@@ -10,22 +10,23 @@ var app = angular.module('todoApp', ['ngRoute']);
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'Views/Insurance.html'
+            templateUrl: 'https://crispy-waffle-vgjgg554xg6fwvpp-8080.app.github.dev/Views/Insurance.html'
         })
         .when('/home', {
-            templateUrl: 'Views/home.html'
+            templateUrl: 'https://crispy-waffle-vgjgg554xg6fwvpp-8080.app.github.dev/Views/home.html'
         })
         .when('/services', {
-            templateUrl: 'Views/services.html'
+            templateUrl: 'https://crispy-waffle-vgjgg554xg6fwvpp-8080.app.github.dev/Views/services.html'
         })
         .when('/testimonials', {
-            templateUrl: 'Views/testimonials.html'
+            templateUrl: 'https://crispy-waffle-vgjgg554xg6fwvpp-8080.app.github.dev/Views/testimonials.html'
         })
         .when('/contact', {
-            templateUrl: 'Views/contact.html'
+            templateUrl: 'https://crispy-waffle-vgjgg554xg6fwvpp-8080.app.github.dev/Views/contact.html'
         })
         .otherwise({ redirectTo: '/' });
 }]);
-rt("Selamat datang di Asuransi Terpercaya!");
-// }); 
+
+
+
 
