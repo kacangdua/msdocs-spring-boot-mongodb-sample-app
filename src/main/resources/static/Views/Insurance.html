@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    header {
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .hero {
+        padding: 50px;
+        background-color: #f8f9fa;
+    }
+
+    .services .service-card {
+        background: #ddd;
+        padding: 20px;
+        margin: 10px;
+        display: inline-block;
+    }
+
+    footer {
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 th:text="${title}"></h1>
+        <nav>
+            <ul>
+                <li><a href="#!/">Beranda</a></li>
+                <li><a href="#!/home">Home</a></li>
+                <li><a href="#!/services">Layanan</a></li>
+                <li><a href="#!/testimonials">Testimoni</a></li>
+                <li><a href="#!/contact">Kontak</a></li>
+            </ul>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Perlindungan Terbaik untuk Anda dan Keluarga</h2>
+        <p>Dapatkan layanan asuransi terbaik dengan berbagai pilihan perlindungan.</p>
+        <a href="#services" class="btn">Lihat Layanan</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Layanan Kami</h2>
+        <div class="service-card">
+            <h3>Asuransi Kesehatan</h3>
+            <p>Perlindungan kesehatan menyeluruh untuk Anda dan keluarga.</p>
+        </div>
+        <div class="service-card">
+            <h3>Asuransi Jiwa</h3>
+            <p>Jaminan finansial bagi keluarga Anda dalam kondisi tak terduga.</p>
+        </div>
+        <div class="service-card">
+            <h3>Asuransi Kendaraan</h3>
+            <p>Lindungi kendaraan Anda dari berbagai risiko kecelakaan dan pencurian.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <blockquote>
+            "Asuransi ini memberikan pelayanan terbaik, sangat membantu!" - Rina S.
+        </blockquote>
+        <blockquote>
+            "Proses klaim cepat dan mudah, sangat puas dengan layanan mereka." - Budi P.
+        </blockquote>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Asuransi Terpercaya. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+
+</html>
+
+<script src="Scripts/script.js"></script>

@@ -32,7 +32,6 @@ public class TodoListController {
 
     public TodoListController() {
     }
-
     /**
      * HTTP GET
      */
