@@ -23,12 +23,11 @@ public class InsuranceController {
 
     @GetMapping("/services")
     public String servicesSection(Model model) {
-        return "View/services";
+        return "View/Services";
     }
 
     @GetMapping("/testimonials")
     public String testimonialsSection(Model model) {
-        return "View/testimonials";
+        return "View/Testimonials";
     }
 }
-
