@@ -7,32 +7,30 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class InsuranceController {
-    
+
     @GetMapping("/")
-    public String home(Model model) {
-        model.addAttribute("title", "Asuransi Terpercaya");
-        return "View/Insurance"; // Mengarah ke src/main/resources/templates/View/Insurance.html
+    public String index() {
+        return "Views/Insurance"; // Jika menggunakan Thymeleaf
     }
 
     @GetMapping("/home")
-    public String homeSection(Model model) {
-        model.addAttribute("message", "Perlindungan Terbaik untuk Anda dan Keluarga");
-        return "View/home";
+    public String home() {
+        return "Views/home";
     }
 
     @GetMapping("/services")
-    public String servicesSection(Model model) {
-        return "View/services";
+    public String services() {
+        return "Views/services";
     }
 
     @GetMapping("/testimonials")
-    public String testimonialsSection(Model model) {
-        return "View/testimonials";
+    public String testimonials() {
+        return "Views/testimonials";
     }
 
     @GetMapping("/contact")
-    public String contactSection(Model model) {
-        return "View/contact";
+    public String contact() {
+        return "Views/contact";
     }
 }
 
