@@ -48,7 +48,6 @@ public class TodoListController {
     public List<TodoItem> getAllTodoItems() {
         logger.info("GET request access '/api/todolist' path.");
 
-        List<TodoItem> items = todoItemRepository.findAll();
         return todoItemRepository.findAll();
     }
 
