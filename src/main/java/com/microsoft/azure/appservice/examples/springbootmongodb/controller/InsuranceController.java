@@ -10,6 +10,7 @@ public class InsuranceController {
 
     @GetMapping("/")
     public String index() {
+        System.out.println("Endpoint / dipanggil");
         return "Views/Insurance"; // Jika menggunakan Thymeleaf
     }
 
